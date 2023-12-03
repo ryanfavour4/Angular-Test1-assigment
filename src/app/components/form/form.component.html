@@ -1,0 +1,148 @@
+<form class="form-component">
+  <!-- FIRST NAME -->
+  <div class="form-control">
+    <input type="text" required />
+    <label>
+      <span style="transition-delay: 0ms">F</span
+      ><span style="transition-delay: 50ms">i</span
+      ><span style="transition-delay: 100ms">r</span
+      ><span style="transition-delay: 150ms">s</span
+      ><span style="transition-delay: 200ms">t</span
+      ><span style="transition-delay: 250ms">n</span
+      ><span style="transition-delay: 300ms">a</span
+      ><span style="transition-delay: 350ms">m</span
+      ><span style="transition-delay: 400ms">e</span>
+    </label>
+  </div>
+
+  <!-- LAST NAME -->
+  <div class="form-control">
+    <input type="text" required />
+    <label>
+      <span style="transition-delay: 0ms">L</span
+      ><span style="transition-delay: 50ms">a</span
+      ><span style="transition-delay: 100ms">s</span
+      ><span style="transition-delay: 200ms">t</span
+      ><span style="transition-delay: 250ms">n</span
+      ><span style="transition-delay: 300ms">a</span
+      ><span style="transition-delay: 350ms">m</span
+      ><span style="transition-delay: 400ms">e</span>
+    </label>
+  </div>
+
+  <!-- EMAIL -->
+  <div class="form-control">
+    <input type="email" required />
+    <label>
+      <span style="transition-delay: 0ms">E</span
+      ><span style="transition-delay: 50ms">m</span
+      ><span style="transition-delay: 100ms">a</span
+      ><span style="transition-delay: 200ms">i</span
+      ><span style="transition-delay: 250ms">l</span>
+    </label>
+  </div>
+
+  <!-- PHONE NUMBER -->
+  <div class="form-control">
+    <input type="tel" required />
+    <label>
+      <span style="transition-delay: 0ms">P</span
+      ><span style="transition-delay: 50ms">h</span
+      ><span style="transition-delay: 100ms">o</span
+      ><span style="transition-delay: 200ms">n</span
+      ><span style="transition-delay: 250ms">e</span
+      ><span style="transition-delay: 300ms"></span
+      ><span style="transition-delay: 350ms">N</span
+      ><span style="transition-delay: 400ms">o</span>
+    </label>
+  </div>
+
+  <!-- DATE OF BIRTH -->
+  <div class="form-control">
+    <input type="date" required />
+    <label>
+      <span style="transition-delay: 0ms">D</span
+      ><span style="transition-delay: 50ms">a</span
+      ><span style="transition-delay: 100ms">t</span
+      ><span style="transition-delay: 200ms">e</span
+      ><span style="transition-delay: 250ms"></span
+      ><span style="transition-delay: 300ms">O</span
+      ><span style="transition-delay: 350ms">f</span
+      ><span style="transition-delay: 400ms"></span
+      ><span style="transition-delay: 450ms">B</span
+      ><span style="transition-delay: 500ms">i</span
+      ><span style="transition-delay: 550ms">r</span
+      ><span style="transition-delay: 600ms">t</span
+      ><span style="transition-delay: 650ms">h</span>
+    </label>
+  </div>
+
+  <div class="form-control">
+    <select required>
+      <option hidden value=""></option>
+      @for (item of items; track item) {
+      <option value="item.name, item.model">
+        {{ item.name }}, {{ item.model }}
+      </option>
+      } @empty {
+      <option value="">No Data Yet...</option>
+      }
+    </select>
+    <label>
+      <span style="transition-delay: 0ms">C</span
+      ><span style="transition-delay: 50ms">a</span
+      ><span style="transition-delay: 100ms">r</span
+      ><span style="transition-delay: 150ms"></span
+      ><span style="transition-delay: 200ms">B</span
+      ><span style="transition-delay: 250ms">r</span
+      ><span style="transition-delay: 280ms">a</span
+      ><span style="transition-delay: 300ms">n</span
+      ><span style="transition-delay: 350ms">d</span>
+    </label>
+  </div>
+
+  <div class="form-control">
+    <select required>
+      <option hidden value=""></option>
+      @for (item of bodyType; track item) {
+      <option value="item.type, item.price">
+        {{ item.type }}, -- ₦{{ item.price }}
+      </option>
+      } @empty {
+      <option value="">No Data Yet...</option>
+      }
+    </select>
+    <label>
+      <span style="transition-delay: 0ms">B</span
+      ><span style="transition-delay: 50ms">o</span
+      ><span style="transition-delay: 100ms">d</span
+      ><span style="transition-delay: 150ms">y</span
+      ><span style="transition-delay: 200ms"></span
+      ><span style="transition-delay: 250ms">T</span
+      ><span style="transition-delay: 280ms">y</span
+      ><span style="transition-delay: 300ms">p</span
+      ><span style="transition-delay: 350ms">e</span>
+    </label>
+  </div>
+
+  <!-- REGISTRATION NUMBER -->
+  <div class="form-control">
+    <input type="number" required />
+    <label>
+      <span style="transition-delay: 0ms">R</span
+      ><span style="transition-delay: 50ms">e</span
+      ><span style="transition-delay: 100ms">g</span
+      ><span style="transition-delay: 200ms"></span
+      ><span style="transition-delay: 250ms">N</span
+      ><span style="transition-delay: 300ms">u</span
+      ><span style="transition-delay: 350ms">m</span
+      ><span style="transition-delay: 400ms">b</span>
+      <span style="transition-delay: 450ms">e</span>
+      <span style="transition-delay: 500ms">r</span>
+    </label>
+  </div>
+
+  <div class="span-2">
+    <button class="shadow__btn">Submit Form</button>
+  </div>
+</form>
